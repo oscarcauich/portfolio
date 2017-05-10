@@ -4,3 +4,32 @@
   font-size:100%;
   box-sizing: border-box;
 }
+.lnr {
+  color: #0F52BA;
+}
+.lnr-chevron-left {
+  font-size: 1.1em;
+}
+.lnr-chevron-right {
+  margin-top: 5px;
+  font-size: 1.1em;
+}
+h1 {
+  display: inline-block;
+  font-size: 2em;
+  font-family: cheri liney;
+  margin-top: 5px;
+}
+.lnr-menu {
+  float: right;
+  color: #0F52BA;
+  font-size: 40px;
+  margin-top: -50px;
+}
+
+/*hide the hamburger menu when screen gets bigger*/
+@media screen and (min-width: 640px){
+.lnr-menu {
+    display: none;
+}
+}
