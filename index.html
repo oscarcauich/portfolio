@@ -3,7 +3,9 @@
 <head>
   <title>Oscar Cauich</title>
   <link type="text/css" href="base.css" rel="stylesheet">
+  <link type="text/css" href="iconfonts/css/fpslineicons-codes.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <script src="https://use.fontawesome.com/ea077f6abd.js"></script>
 </head>
 <body>
 <header>
@@ -18,22 +20,26 @@
     <div class="lnr lnr-menu"></div>
     <nav id="main-nav" class="nav-menu">
       <ul>
-        <li>menu 1 </li>
-        <li>menu 2 </li>
-        <li>menu 3 </li>
+        <a href="#"><li class="tab"><i class="fa fa-home fa-fw"></i> Home </li></a>
+        <a href="#"><li class="tab"  data-content="about-me"><i class="fa fa-user fa-fw"></i> About Me</li></a>
+        <a href="#"><li class="tab" data-content="projects"><i class="fa fa-product-hunt fa-fw"></i> Projects</li></a>
       </ul>
     </nav>
   </section>
 </header>
     <main>
-      <section id="projects">
+      <section id="about-me" class="data-content" class="tab-content">
+        <h1>About me</h1>
+        <p>Some information about me will go here</p>
+      </section>
+      <section id="projects" class="data-content" class="tab-content">
         <projects class="project-template">
-          <header>
+          <headerss>
           <h1 id="project-name">Project Name</h1>
           <div class="date-completed">
             Completed <date>Date Completed</date>
           </div>
-        </header>
+        </headers>
         <section class="project-body">
         <div class="project-image">
           <img src="some.png"/>
@@ -46,11 +52,17 @@
       </section>
     </main>
     <footer>
-      <span> facebook </span><span> Twitter </span><span> GitHub </span>
+      <div class="social-media">
+      <a href="http://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a>
+      <a href="http://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
+      <a href="http://www.github.com"><i class="fa fa-github fa-2x"></i></a>
+      <a href="http://www.google.com"><i class="fa fa-google-plus fa-2x"></i></a>
+    </div>
     </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="projectList.js"></script>
   <script src="portfolioscript.js"></script>
+  <script src="contentView.js"></script>
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </body>
 </html>
