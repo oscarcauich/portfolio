@@ -36,8 +36,17 @@ projectsDisplay.forEach(function(project) {
 
 
 $(document).ready(function() {
+  $('.lnr-cross').hide();
   $('.lnr-menu').on('click', function(){
-    // $('#main-nav').removeClass();
-    $('#main-nav').toggleClass('show-menu');
+    $('.nav-menu').slideToggle('slow',function(){
+      $('.lnr-menu').hide();
+      $('.lnr-cross').show();
+    });
+  })
+  $('.lnr-cross').on('click', function(){
+    $('.nav-menu').slideToggle('slow',function(){
+      $('.lnr-cross').hide();
+      $('.lnr-menu').show();
+    })
   })
 });

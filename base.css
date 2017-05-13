@@ -32,6 +32,12 @@ h1 {
   font-size: 40px;
   margin-top: -50px;
 }
+.lnr-cross {
+  float: right;
+  color: #0F52BA;
+  font-size: 40px;
+  margin-top: -50px;
+}
 .nav-menu {
   display: none;
 }
