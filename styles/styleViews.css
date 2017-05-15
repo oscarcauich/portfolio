@@ -1,0 +1,33 @@
+/*hide the hamburger menu when screen gets bigger*/
+@media screen and (min-width: 640px){
+.lnr-menu {
+    display: none;
+}
+.nav-menu {
+  display: inline;
+  width: 100%;
+  bord
+  border: 1px solid blue;
+}
+.nav-menu li {
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+  padding-left: 10px;
+  line-height: 30px;
+  font-family: cheri liney;
+  border: none;
+  width: 30%;
+  height: 40px;
+  background-color: red;
+
+}
+.menu-nav {
+  width: 30%;
+  display: inline-block;
+  float: right;
+  position: relative;
+  right: 10%;
+  top: 10px;
+  height: 30px;
+}
