@@ -12,15 +12,14 @@ function PortfolioCreate(portolioObjs) {
   this.fullDescrition = portolioObjs.fullDescrition;
 }
 PortfolioCreate.prototype.toHtml = function() {
-  var $newProject = $('projects.project-template').clone();
-  $newProject.removeClass('project-template');
+  var getTemplate = $('#projects-template').html();
+  console.log(getTemplate);
+  var template = Handlebars.compile(getTemplate);
 
-  $newProject.find('date').html('about ' + parseInt((new Date() - new Date(this.dateCreated))/60/60/24/1000) + ' days ago');
+  this.daysAgo = parseInt((new Date() - new Date(this.dateCreated))/60/60/24/1000);
+  this.dateCreated = this.dateCreated ? `published ${this.daysAgo} days ago` : '(draft)';
 
-  $newProject.find('#project-name').html(this.title);
-  $newProject.find('.project-discription').html(this.smallDescription);
-  $newProject.append('<hr>');
-  return $newProject;
+  return template(this);
 };
 
 projects.sort(function(a,b) {

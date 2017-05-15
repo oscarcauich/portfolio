@@ -41,9 +41,9 @@ h1 {
 .nav-menu {
   display: none;
 }
-.project-template {
+/*.project-template {
   display: none;
-}
+}*/
 
 /*style the nav menu when hamburger button is clicked*/
 .show-menu {
@@ -79,6 +79,7 @@ footer{
 .nav-menu {
   display: inline;
   width: 100%;
+  bord
   border: 1px solid blue;
 }
 .nav-menu li {

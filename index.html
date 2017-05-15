@@ -10,9 +10,9 @@
   <script id="projects-template" type="text/x-handlebars-template">
         <projects class="project-template">
           <headerss>
-          <h1 id="project-name">${{title}}</h1>
+          <h1 id="project-name">{{title}}</h1>
           <div class="date-completed">
-            Completed <date>${{dateCreated}}</date>
+            Completed <date>{{dateCreated}}</date>
           </div>
         </headers>
         <section class="project-body">
@@ -20,7 +20,7 @@
           <img src="some.png"/>
         </div>
         <div class="project-discription">
-          ${{smallDescription}}
+          {{smallDescription}}
         </div>
       </section>
         </projects>
@@ -53,22 +53,7 @@
         <p>Some information about me will go here</p>
       </section>
       <section id="projects" class="data-content" class="tab-content">
-        <projects class="project-template">
-          <headerss>
-          <h1 id="project-name">Project Name</h1>
-          <div class="date-completed">
-            Completed <date>Date Completed</date>
-          </div>
-        </headers>
-        <section class="project-body">
-        <div class="project-image">
-          <img src="some.png"/>
-        </div>
-        <div class="project-discription">
-          small description
-        </div>
-      </section>
-        </projects>
+
       </section>
     </main>
     <footer>
@@ -80,7 +65,7 @@
     </div>
     </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <scrip src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
   <script src="projectList.js"></script>
   <script src="portfolioscript.js"></script>
   <script src="contentView.js"></script>
