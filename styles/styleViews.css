@@ -7,7 +7,6 @@
   display: inline;
   width: 100%;
   bord
-  border: 1px solid blue;
 }
 .nav-menu li {
   text-align: center;
@@ -15,12 +14,12 @@
   padding: 5px;
   padding-left: 10px;
   line-height: 30px;
-  font-family: cheri liney;
   border: none;
+  font-family: cheri liney;
+  margin-top: -5px;
   width: 30%;
   height: 40px;
-  background-color: red;
-
+  background-color: #79BD8F;
 }
 .menu-nav {
   width: 30%;
