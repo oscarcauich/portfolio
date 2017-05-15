@@ -2,10 +2,30 @@
 <html>
 <head>
   <title>Oscar Cauich</title>
-  <link type="text/css" href="base.css" rel="stylesheet">
+  <link type="text/css" href="/styles/base.css" rel="stylesheet">
+  <link type="text/css" href="/styles/styleViews.css" rel="stylesheet">
   <link type="text/css" href="iconfonts/css/fpslineicons-codes.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <script src="https://use.fontawesome.com/ea077f6abd.js"></script>
+  <!-- Script for the handlebar.js template -->
+  <script id="projects-template" type="text/x-handlebars-template">
+        <projects class="project-template">
+          <headerss>
+          <h1 id="project-name">{{title}}</h1>
+          <div class="date-completed">
+            Completed <date>{{dateCreated}}</date>
+          </div>
+        </headers>
+        <section class="project-body">
+        <div class="project-image">
+          <img src="some.png"/>
+        </div>
+        <div class="project-discription">
+          {{smallDescription}}
+        </div>
+      </section>
+        </projects>
+  </script>
 </head>
 <body>
 <header>
@@ -18,6 +38,7 @@
   </section>
   <section class="menu-nav">
     <div class="lnr lnr-menu"></div>
+    <div class="lnr lnr-cross"></div>
     <nav id="main-nav" class="nav-menu">
       <ul>
         <a href="#"><li class="tab"><i class="fa fa-home fa-fw"></i> Home </li></a>
@@ -33,22 +54,7 @@
         <p>Some information about me will go here</p>
       </section>
       <section id="projects" class="data-content" class="tab-content">
-        <projects class="project-template">
-          <headerss>
-          <h1 id="project-name">Project Name</h1>
-          <div class="date-completed">
-            Completed <date>Date Completed</date>
-          </div>
-        </headers>
-        <section class="project-body">
-        <div class="project-image">
-          <img src="some.png"/>
-        </div>
-        <div class="project-discription">
-          small description
-        </div>
-      </section>
-        </projects>
+
       </section>
     </main>
     <footer>
@@ -60,9 +66,10 @@
     </div>
     </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="projectList.js"></script>
-  <script src="portfolioscript.js"></script>
-  <script src="contentView.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script src="/scripts/projectList.js"></script>
+  <script src="/scripts/portfolioscript.js"></script>
+  <script src="/scripts/contentView.js"></script>
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </body>
 </html>

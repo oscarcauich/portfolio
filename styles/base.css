@@ -32,10 +32,13 @@ h1 {
   font-size: 40px;
   margin-top: -50px;
 }
-.nav-menu {
-  display: none;
+.lnr-cross {
+  float: right;
+  color: #0F52BA;
+  font-size: 40px;
+  margin-top: -50px;
 }
-.project-template {
+.nav-menu {
   display: none;
 }
 
@@ -43,7 +46,7 @@ h1 {
 .show-menu {
   display: block;
 }
-.show-menu li {
+.nav-menu li {
   padding: 10px;
   display: inline-block;
   width: 100%;
@@ -64,29 +67,4 @@ footer{
   text-align: center;
   padding-left: 30px;
   padding-top: 10px;
-}
-/*hide the hamburger menu when screen gets bigger*/
-@media screen and (min-width: 640px){
-.lnr-menu {
-    display: none;
-}
-.nav-menu {
-  display: inline;
-}
-.nav-menu li {
-  text-align: center;
-  display: inline-block;
-  padding: 5px;
-  padding-left: 10px;
-  font-family: cheri liney;
-}
-.menu-nav {
-  width: 30%;
-  display: inline-block;
-  float: right;
-  position: relative;
-  right: 10%;
-  top: 10px;
-  height: 30px;
-}
 }
