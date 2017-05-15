@@ -6,6 +6,25 @@
   <link type="text/css" href="iconfonts/css/fpslineicons-codes.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <script src="https://use.fontawesome.com/ea077f6abd.js"></script>
+  <!-- Script for the handlebar.js template -->
+  <script id="projects-template" type="text/x-handlebars-template">
+        <projects class="project-template">
+          <headerss>
+          <h1 id="project-name">${{title}}</h1>
+          <div class="date-completed">
+            Completed <date>${{dateCreated}}</date>
+          </div>
+        </headers>
+        <section class="project-body">
+        <div class="project-image">
+          <img src="some.png"/>
+        </div>
+        <div class="project-discription">
+          ${{smallDescription}}
+        </div>
+      </section>
+        </projects>
+  </script>
 </head>
 <body>
 <header>

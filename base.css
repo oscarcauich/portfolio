@@ -49,7 +49,7 @@ h1 {
 .show-menu {
   display: block;
 }
-.show-menu li {
+.nav-menu li {
   padding: 10px;
   display: inline-block;
   width: 100%;
@@ -78,13 +78,29 @@ footer{
 }
 .nav-menu {
   display: inline;
+  width: 100%;
+  border: 1px solid blue;
 }
 .nav-menu li {
   text-align: center;
   display: inline-block;
   padding: 5px;
   padding-left: 10px;
+  line-height: 30px;
   font-family: cheri liney;
+  border: none;
+  width: 30%;
+  height: 40px;
+  background-color: red;
+
+
+  /*padding: 10px;
+  display: inline-block;
+
+  color: #3F4040;
+  font-family: sans-serif;
+
+  border-bottom: 1px solid gray;*/
 }
 .menu-nav {
   width: 30%;
