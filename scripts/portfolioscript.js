@@ -1,7 +1,5 @@
 'use strict';
 
-// var projectsDisplay = [];
-
 // create constructor for projects
 function PortfolioCreate(portolioObjs) {
   this.title = portolioObjs.title;
@@ -25,16 +23,6 @@ PortfolioCreate.prototype.toHtml = function() {
   return template(this);
 };
 
-// projects.sort(function(a,b) {
-//   return (new Date(b.dateCreated)) - (new Date(a.dateCreated));
-// });
-//
-// projects.forEach(function(portolioObjs) {
-//   projectsDisplay.push(new PortfolioCreate(portolioObjs));
-// });
-// projectsDisplay.forEach(function(project) {
-//   $('#projects').append(project.toHtml());
-// });
 PortfolioCreate.loadAll = function(projectsData) {
   projectsData.sort(function(a,b) {
     return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
@@ -47,11 +35,9 @@ PortfolioCreate.loadAll = function(projectsData) {
 
 PortfolioCreate.fetchAll = function() {
   if (localStorage.projectsData) {
-    // When rawData is already in localStorage,
-    // we can load it with the .loadAll function above,
-    // and then render the index page (using the proper method on the articleView object).
-
-    // PortfolioCreate.loadAll(JSON.parse(localStorage.rawData)); //TODO: What do we pass in to loadAll()?
+    let jsonData = JSON.parse(localStorage.projectsData);
+    PortfolioCreate.loadAll(jsonData);
+    projectView.initIndexPage();
 
   } else {
     let jsonData = '/data/projects.json';
