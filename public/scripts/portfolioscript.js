@@ -1,5 +1,8 @@
 'use strict';
 
+var app = app || {};
+
+(function(module){
 // create constructor for projects
 function PortfolioCreate(portolioObjs) {
   this.title = portolioObjs.title;
@@ -14,7 +17,6 @@ PortfolioCreate.all = [];
 
 PortfolioCreate.prototype.toHtml = function() {
   var getTemplate = $('#projects-template').html();
-  console.log(getTemplate);
   var template = Handlebars.compile(getTemplate);
 
   this.daysAgo = parseInt((new Date() - new Date(this.dateCreated))/60/60/24/1000);
@@ -23,15 +25,11 @@ PortfolioCreate.prototype.toHtml = function() {
   return template(this);
 };
 
-PortfolioCreate.loadAll = function(projectsData) {
-  projectsData.sort(function(a,b) {
-    return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-  });
+PortfolioCreate.loadAll = rows => {
+  rows.sort((a, b) => (new Date(b.publishedOn)) - (new Date(a.publishedOn)));
 
-  projectsData.forEach(function(ele) {
-    PortfolioCreate.all.push(new PortfolioCreate(ele));
-  })
-}
+  PortfolioCreate.all = rows.map((portfolio) => new PortfolioCreate(portfolio));
+};
 
 PortfolioCreate.fetchAll = function() {
   if (localStorage.projectsData) {
@@ -66,3 +64,6 @@ $(document).ready(function() {
     })
   })
 });
+// module.articleView = articleView;
+module.PortfolioCreate = PortfolioCreate;
+})(app)
