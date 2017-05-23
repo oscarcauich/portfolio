@@ -19,7 +19,7 @@ projectView.initIndexPage = function() {
     $('#projects').append(article.toHtml())
   });
 
-  $('#funFact').text(app.PortfolioCreate.funFacts);
+  $('#funFact').text(app.PortfolioCreate.funFacts());
 };
 $(document).ready(function() {
   projectView.handleMainNav();

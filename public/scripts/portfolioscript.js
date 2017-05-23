@@ -44,7 +44,8 @@ var app = app || {};
             localStorage.projectsData = JSON.stringify(projectsData);
             PortfolioCreate.loadAll(projectsData);
             projectView.initIndexPage();
-            console.log('workd fool')
+          }, function(err) {
+            console.error(err);
           })
     }
   };
@@ -54,7 +55,7 @@ var app = app || {};
     let newName = myName.split(' ').join().replace(/,/, '');
     let tempName = newName.split('');
     let letterCount = tempName.reduce((initial) => initial += 1, 0)
-    return  'My Name has ' + letterCount + ' character';
+    return  'My Name has ' + letterCount + ' characters';
   }
 
   $(document).ready(function() {
