@@ -15,9 +15,11 @@ projectView.handleMainNav = function() {
 };
 
 projectView.initIndexPage = function() {
-  PortfolioCreate.all.forEach(function(article) {
+  app.PortfolioCreate.all.forEach(function(article) {
     $('#projects').append(article.toHtml())
   });
+
+  $('#funFact').text(app.PortfolioCreate.funFacts);
 };
 $(document).ready(function() {
   projectView.handleMainNav();
