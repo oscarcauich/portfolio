@@ -47,6 +47,14 @@ var app = app || {};
             console.log('workd fool')
           })
     }
+  };
+
+  PortfolioCreate.funFacts = function funFact(){
+    let myName = 'Oscar Cauich'
+    let newName = myName.split(' ').join().replace(/,/, '');
+    let tempName = newName.split('');
+    let letterCount = tempName.reduce((initial) => initial += 1, 0)
+    return  'My Name has ' + letterCount + ' character';
   }
 
   $(document).ready(function() {

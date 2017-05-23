@@ -18,6 +18,8 @@ projectView.initIndexPage = function() {
   app.PortfolioCreate.all.forEach(function(article) {
     $('#projects').append(article.toHtml())
   });
+
+  $('#funFact').text(app.PortfolioCreate.funFacts);
 };
 $(document).ready(function() {
   projectView.handleMainNav();
