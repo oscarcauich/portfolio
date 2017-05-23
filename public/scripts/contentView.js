@@ -4,7 +4,7 @@ const projectView = {};
 projectView.handleMainNav = function() {
   $('.menu-nav').on('click', '.tab', function() {
     if($(this).text() == ' Home '){
-      $('.data-content').fadeIn();
+      $('#projects').fadeIn();
     } else {
       $('.data-content').hide();
       $('#' + $(this).data('content')).fadeIn();
@@ -16,6 +16,7 @@ projectView.handleMainNav = function() {
 
 projectView.initIndexPage = function() {
   app.PortfolioCreate.all.forEach(function(article) {
+    $('#about-me').hide();
     $('#projects').append(article.toHtml())
   });
 
