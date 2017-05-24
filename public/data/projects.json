@@ -2,22 +2,22 @@
   {
     "title": "Bus Mall",
     "dateCreated": "2017-04-20",
-    "portfolioPicture": "img/portfolioPictureOne.jpeg",
-    "smallDescription": "a small description will go here",
+    "portfolioPicture": "/img/bus-mall-project.jpg",
+    "smallDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "fullDescrition": "a full description will go here"
   },
   {
     "title": "Salmon Cookie",
     "dateCreated": "2017-04-17",
-    "portfolioPicture": "img/portfolioPictureTwo.jpeg",
-    "smallDescription": "a small description will go here",
+    "portfolioPicture": "/img/salmoncookiesscreen.png",
+    "smallDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "fullDescrition": "a full description will go here"
   },
   {
     "title": "About Me Game",
     "dateCreated": "2017-04-05",
-    "portfolioPicture": "img/portfolioPictureOne.jpeg",
-    "smallDescription": "a small description will go here",
+    "portfolioPicture": "/img/aboutmegame.png",
+    "smallDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "fullDescrition": "a full description will go here"
   }
 ]
