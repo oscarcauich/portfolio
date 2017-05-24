@@ -47,9 +47,9 @@
     <div class="lnr lnr-cross"></div>
     <nav id="main-nav" class="nav-menu">
       <ul>
-        <a href="#"><li class="tab"><i class="fa fa-home fa-fw"></i> Home </li></a>
-        <a href="#"><li class="tab"  data-content="about-me"><i class="fa fa-user fa-fw"></i> About Me</li></a>
-        <a href="#"><li class="tab" data-content="projects"><i class="fa fa-product-hunt fa-fw"></i> Projects</li></a>
+        <a href="/"><li class="tab"><i class="fa fa-home fa-fw"></i> Home </li></a>
+        <a href="/about"><li class="tab"  data-content="about-me"><i class="fa fa-user fa-fw"></i> About Me</li></a>
+        <a href="/project"><li class="tab" data-content="projects"><i class="fa fa-product-hunt fa-fw"></i> Projects</li></a>
       </ul>
     </nav>
   </section>
@@ -76,8 +76,8 @@
     </section>
     </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
   <script src="/scripts/model/portfolioscript.js"></script>
   <script src="/scripts/view/contentView.js"></script>
   <script src="/scripts/controller/aboutController.js"></script>
@@ -85,7 +85,7 @@
   <script src="/scripts/controller/routers.js"></script>
   <!-- method to fetch all articles to screen -->
   <script>
-  app.PortfolioCreate.fetchAll(projectView.initIndexPage);
+  // app.PortfolioCreate.fetchAll(projectView.initIndexPage);
   </script>
 </body>
 </html>
