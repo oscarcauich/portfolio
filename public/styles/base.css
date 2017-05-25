@@ -92,3 +92,25 @@ footer{
   padding-left: 30px;
   padding-top: 10px;
 }
+#about-me a {
+  outline: none;
+  text-decoration: none;
+  padding: .5em .1em 0;
+}
+#about-me a:link {
+  color: #BAE498;
+}
+#about-me a:visited {
+  color: #437A16;
+}
+#about-me a:focus {
+  /*border-bottom: 1px solid;*/
+  color: #BAE498;
+}
+#about-me a:hover {
+  /*border-bottom: 1px solid;*/
+  color: #94cc6c;
+}
+#about-me a:active {
+  color: #72a54d;
+}
