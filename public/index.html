@@ -28,6 +28,18 @@
       </section>
        </projects>
   </script>
+  <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+        <p>Description: {{description}}</p>
+        <p>Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+        {{#if watchers_count}}
+          <p>{{watchers_count}} watching this repo</p>
+        {{/if}}
+      </li>
+    </script>
 </head>
 <body>
 <header>
@@ -59,6 +71,7 @@
         <h1>About me</h1>
         <p>I developed a strong feeling for writing code, when I discovered PHP around 2004.
         More will go here...</p>
+        <ul> </ul>
       </section>
       <section id="projects" class="data-content">
 
@@ -76,12 +89,15 @@
     </section>
     </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
   <script src="/scripts/model/portfolioscript.js"></script>
   <script src="/scripts/view/contentView.js"></script>
-  <script src="/scripts/controller/aboutController.js"></script>
   <script src="/scripts/controller/projectController.js"></script>
+
+  <script src="/scripts/model/repo.js"></script>
+  <script src="/scripts/view/repoView.js"></script>
+  <script src="/scripts/controller/aboutController.js"></script>
   <script src="/scripts/controller/routers.js"></script>
   <!-- method to fetch all articles to screen -->
   <script>

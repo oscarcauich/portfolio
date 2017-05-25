@@ -11,8 +11,8 @@ var app = app || {};
     $.get('/github/user/repos')
     .then(data => repos.all = data,err => console.error(err))
     .then(callback);
+
   }
   repos.with = attr => repos.all.filter(repo => repo[attr]);
-
   module.repos = repos;
 })(app);
