@@ -7,6 +7,7 @@ var app = app || {};
   aboutController.init = function() {
     $('.data-content').hide();
     $('#about-me').fadeIn();
+    app.repos.requestRepos(app.repoView.index);
   }
   module.aboutController = aboutController;
 })(app);
