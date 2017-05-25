@@ -34,3 +34,16 @@ img {
   width: 30%;
   height: 30%;
 }
+h1 {
+  display: block;
+  font-size: 2em;
+  font-family: cheri liney;
+  margin-top: 5px;
+}
+h2 {
+  display: none;
+}
+h2 i{
+  display: none;
+}
+}
