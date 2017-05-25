@@ -4,6 +4,10 @@
   font-size:100%;
   box-sizing: border-box;
 }
+body{
+  position: relative;
+  height: 100%;
+}
 header {
   background-color: #79BD8F;
 }
@@ -27,7 +31,7 @@ header {
   font-size: 1.1em;
 }
 h1 {
-  display: none;
+  display:none;
   font-size: 2em;
   font-family: cheri liney;
   margin-top: 5px;
@@ -86,11 +90,13 @@ footer{
   background-color: #79BD8F;
   text-align: center;
   height: 50px;
+  padding: 1rem;
+  width: 100%;
 }
 .social-media i{
   text-align: center;
   padding-left: 30px;
-  padding-top: 10px;
+  padding-top: 0;
 }
 #about-me a {
   outline: none;

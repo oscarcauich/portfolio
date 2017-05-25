@@ -15,3 +15,9 @@
   border-bottom: 2px solid #888c93;
   padding-bottom: 1.3em;
 }
+p {
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: .5em 1em;
+  border-bottom: 2px solid #888c93;
+}
