@@ -3,6 +3,10 @@
 .lnr-menu {
     display: none;
 }
+.main-header{
+  display: inline-block;
+  height: 60px;
+}
 .nav-menu {
   display: inline;
   width: 100%;
