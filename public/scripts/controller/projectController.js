@@ -6,6 +6,7 @@ var app = app || {};
   const projectController = {};
 
   projectController.init = function(){
+    $('#projects').empty();
     app.PortfolioCreate.fetchAll(projectView.initIndexPage);
     $('.data-content').hide();
     $('#projects').fadeIn();
